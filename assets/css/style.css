@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Tektur:wght@500&display=swap');
+
+:root {
+    --primary-color: rgb(70, 36, 73);
+    --primary-color-darker: rgb(9, 48, 56);
+    --cor-tabela1: aqua;
+    --cor-tabela2: greenyellow;
+    --cor-tabela3: yellow;
+    --cor-tabela4: orange;
+    --cor-tabela5: orangered;
+    --cor-tabela6: red;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Tektur', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+.corResposta {
+    color: black;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.corTabela1 {
+    background-color: var(--cor-tabela1);
+}
+
+.corTabela2 {
+    background-color: var(--cor-tabela2);
+}
+
+.corTabela3 {
+    background-color: var(--cor-tabela3);
+}
+
+.corTabela4 {
+    background-color: var(--cor-tabela4);
+}
+
+.corTabela5 {
+    background-color: var(--cor-tabela5);
+}
+
+.corTabela6 {
+    background-color: var(--cor-tabela6);
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #cdcf65;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    width: 50%;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}

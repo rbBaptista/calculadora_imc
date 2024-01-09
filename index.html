@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="pt_BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="assets/js/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/imcLogo.png" type="image/x-icon">
+    <title>Tabela IMC</title>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <div>
+
+            <h1>Tabela IMC</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>IMC</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Menos que 18.5 </td>
+                        <td class="corTabela1">Abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>entre 18,5 e 24,9</td>
+                        <td class="corTabela2">Peso normal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25 e 29,9</td>
+                        <td class="corTabela3">Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30 e 34,9</td>
+                        <td class="corTabela4">Obesidade grau 1</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35 e 39,9</td>
+                        <td class="corTabela5">Obesidade grau 2</td>
+                    </tr>
+                    <tr>
+                        <td>Mais que 40</td>
+                        <td class="corTabela6">Obesidade grau 3</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <form>
+                <label for="peso">Peso: </label>
+                <input type="number" id="peso" name="peso" step="0.1" required>
+                <label for="altura">Altura: </label>
+                <input type="number" id="altura" name="altura" step="0.01" required>
+                <button type="submit">Calcular</button>
+            </form>
+            
+            <p id="resposta" class="corResposta"></p>
+            
+        </div>
+
+        <div class="link">
+            <a href="https://sallet.com.br/saiba-como-manter-o-peso-ideal/">Clique aqui para saber como manter o peso ideal</a>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+    <p>Desenvolvido por <a href="Rodolfo">Rodolfo Baptista</a></p>	
+
+</html>
